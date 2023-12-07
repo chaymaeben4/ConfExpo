@@ -1,16 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.design.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="1100.0" stylesheets="style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="connect" layoutX="942.0" layoutY="28.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="133.0" style="-fx-background-color: #36618F; -fx-background-radius: 40;" text="Connecter" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextArea fx:id="text" editable="false" layoutX="185.0" layoutY="71.0" prefHeight="360.0" prefWidth="748.0" text="Conférence Internationale sur l'Innovation Technologique &#10;Date : 15-17 Novembre 2023&#10;Lieu : Centre de Conférences Marrakech&#10;Thème : &quot;Repenser l'Avenir de la Technologie&quot;&#10;                 Sessions Programmées :&#10;                      1-&quot;Intelligence Artificielle et Transformation Digitale&quot;&#10;                             Horaire : 9h00 - 10h30&#10;                             Animateur : Dr. Amina Benali, Expert en IA&#10;                      2-&quot;Nouvelles Frontières de la Cybersécurité&quot;&#10;                             Horaire : 11h00 - 12h30&#10;                             Animateur : Prof. Malik El Amrani, Spécialiste en Cybersecurity&#10;                      3-&quot;Blockchain et Innovation Financière&quot;&#10;                             Horaire : 14h00 - 15h30&#10;                             Animateur : Dr. Samir Chaoui, Expert en Blockchain&#10;                      4-&quot;Développement Durable et Technologie Verte&quot;&#10;                             Horaire : 16h00 - 17h30&#10;                             Animateur : Dr. Fatima Zohra,Environnementaliste">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="search" layoutX="290.0" layoutY="24.0" prefHeight="26.0" prefWidth="580.0" promptText="Rechercher..." />
+      <Button fx:id="assister" layoutX="806.0" layoutY="372.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #E65F3A; -fx-background-radius: 10;" text="Assister" />
+      <TextArea fx:id="text1" editable="false" layoutX="186.0" layoutY="429.0" prefHeight="360.0" prefWidth="748.0" text="Conférence Internationale sur l'Innovation Technologique &#10;Date : 15-17 Novembre 2023&#10;Lieu : Centre de Conférences Marrakech&#10;Thème : &quot;Repenser l'Avenir de la Technologie&quot;&#10;                 Sessions Programmées :&#10;                      1-&quot;Intelligence Artificielle et Transformation Digitale&quot;&#10;                             Horaire : 9h00 - 10h30&#10;                             Animateur : Dr. Amina Benali, Expert en IA&#10;                      2-&quot;Nouvelles Frontières de la Cybersécurité&quot;&#10;                             Horaire : 11h00 - 12h30&#10;                             Animateur : Prof. Malik El Amrani, Spécialiste en Cybersecurity&#10;                      3-&quot;Blockchain et Innovation Financière&quot;&#10;                             Horaire : 14h00 - 15h30&#10;                             Animateur : Dr. Samir Chaoui, Expert en Blockchain&#10;                      4-&quot;Développement Durable et Technologie Verte&quot;&#10;                             Horaire : 16h00 - 17h30&#10;                             Animateur : Dr. Fatima Zohra,Environnementaliste">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <FontAwesomeIconView fill="#0000008d" glyphName="SEARCH" layoutX="281.0" layoutY="44.0" opacity="0.72" text="" />
+      <Button fx:id="assister1" layoutX="806.0" layoutY="732.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #E65F3A; -fx-background-radius: 10;" text="Assister" />
+      <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="955.0" layoutY="56.0" size="20" />
+      <ImageView fx:id="image1" fitHeight="234.0" fitWidth="238.0" layoutX="-65.0" layoutY="-67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image fx:id="image1" url="@../../../images/logo2-01.png" />
+         </image>
+      </ImageView>
+
+      
+   </children>
+</Pane>
