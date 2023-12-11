@@ -10,37 +10,43 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="1100.0" stylesheets="style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="1100.0" stylesheets="style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.HelloController">
    <children>
-      <Button fx:id="connect" layoutX="942.0" layoutY="28.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="133.0" style="-fx-background-color: #36618F; -fx-background-radius: 40;" text="Connecter" textAlignment="RIGHT" textFill="WHITE">
+      <Button fx:id="connect" layoutX="957.0" layoutY="28.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="111.0" style="-fx-background-color: #36618F; -fx-background-radius: 10;" text="Connecter" textAlignment="RIGHT" textFill="WHITE">
          <font>
-            <Font size="15.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TextArea fx:id="text" editable="false" layoutX="185.0" layoutY="71.0" prefHeight="360.0" prefWidth="748.0" text="Conférence Internationale sur l'Innovation Technologique &#10;Date : 15-17 Novembre 2023&#10;Lieu : Centre de Conférences Marrakech&#10;Thème : &quot;Repenser l'Avenir de la Technologie&quot;&#10;                 Sessions Programmées :&#10;                      1-&quot;Intelligence Artificielle et Transformation Digitale&quot;&#10;                             Horaire : 9h00 - 10h30&#10;                             Animateur : Dr. Amina Benali, Expert en IA&#10;                      2-&quot;Nouvelles Frontières de la Cybersécurité&quot;&#10;                             Horaire : 11h00 - 12h30&#10;                             Animateur : Prof. Malik El Amrani, Spécialiste en Cybersecurity&#10;                      3-&quot;Blockchain et Innovation Financière&quot;&#10;                             Horaire : 14h00 - 15h30&#10;                             Animateur : Dr. Samir Chaoui, Expert en Blockchain&#10;                      4-&quot;Développement Durable et Technologie Verte&quot;&#10;                             Horaire : 16h00 - 17h30&#10;                             Animateur : Dr. Fatima Zohra,Environnementaliste">
+      <TextArea fx:id="text" editable="false" layoutX="185.0" layoutY="81.0" prefHeight="349.0" prefWidth="748.0" text="Conférence Internationale sur l'Innovation Technologique &#10;        Date : 15-17 Novembre 2023&#10;        Lieu : Centre de Conférences Marrakech&#10;        Thème : &quot;Repenser l'Avenir de la Technologie&quot;&#10;                 Sessions Programmées :&#10;                      1-&quot;Intelligence Artificielle et Transformation Digitale&quot;&#10;                             Horaire : 9h00 - 10h30&#10;                             Animateur : Dr. Amina Benali, Expert en IA&#10;                      2-&quot;Nouvelles Frontières de la Cybersécurité&quot;&#10;                             Horaire : 11h00 - 12h30&#10;                             Animateur : Prof. Malik El Amrani, Spécialiste en Cybersecurity&#10;                      3-&quot;Blockchain et Innovation Financière&quot;&#10;                             Horaire : 14h00 - 15h30&#10;                             Animateur : Dr. Samir Chaoui, Expert en Blockchain&#10;                      4-&quot;Développement Durable et Technologie Verte&quot;&#10;                             Horaire : 16h00 - 17h30&#10;                             Animateur : Dr. Fatima Zohra,Environnementaliste">
          <font>
-            <Font size="13.0" />
+            <Font name="Arial" size="13.0" />
          </font>
       </TextArea>
       <TextField fx:id="search" layoutX="290.0" layoutY="24.0" prefHeight="26.0" prefWidth="580.0" promptText="Rechercher..." />
-      <Button fx:id="assister" layoutX="806.0" layoutY="372.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #E65F3A; -fx-background-radius: 10;" text="Assister" />
-      <TextArea fx:id="text1" editable="false" layoutX="186.0" layoutY="429.0" prefHeight="360.0" prefWidth="748.0" text="Conférence Internationale sur l'Innovation Technologique &#10;Date : 15-17 Novembre 2023&#10;Lieu : Centre de Conférences Marrakech&#10;Thème : &quot;Repenser l'Avenir de la Technologie&quot;&#10;                 Sessions Programmées :&#10;                      1-&quot;Intelligence Artificielle et Transformation Digitale&quot;&#10;                             Horaire : 9h00 - 10h30&#10;                             Animateur : Dr. Amina Benali, Expert en IA&#10;                      2-&quot;Nouvelles Frontières de la Cybersécurité&quot;&#10;                             Horaire : 11h00 - 12h30&#10;                             Animateur : Prof. Malik El Amrani, Spécialiste en Cybersecurity&#10;                      3-&quot;Blockchain et Innovation Financière&quot;&#10;                             Horaire : 14h00 - 15h30&#10;                             Animateur : Dr. Samir Chaoui, Expert en Blockchain&#10;                      4-&quot;Développement Durable et Technologie Verte&quot;&#10;                             Horaire : 16h00 - 17h30&#10;                             Animateur : Dr. Fatima Zohra,Environnementaliste">
+      <Button fx:id="assister" layoutX="806.0" layoutY="367.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #E65F3A; -fx-background-radius: 10;" text="Assister">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <TextArea fx:id="text1" editable="false" layoutX="186.0" layoutY="459.0" prefHeight="308.0" prefWidth="748.0" text="Conférence Internationale sur l'Innovation Technologique &#10;Date : 15-17 Novembre 2023&#10;Lieu : Centre de Conférences Marrakech&#10;Thème : &quot;Repenser l'Avenir de la Technologie&quot;&#10;                 Sessions Programmées :&#10;                      1-&quot;Intelligence Artificielle et Transformation Digitale&quot;&#10;                             Horaire : 9h00 - 10h30&#10;                             Animateur : Dr. Amina Benali, Expert en IA&#10;                      2-&quot;Nouvelles Frontières de la Cybersécurité&quot;&#10;                             Horaire : 11h00 - 12h30&#10;                             Animateur : Prof. Malik El Amrani, Spécialiste en Cybersecurity&#10;                      3-&quot;Blockchain et Innovation Financière&quot;&#10;                             Horaire : 14h00 - 15h30&#10;                             Animateur : Dr. Samir Chaoui, Expert en Blockchain&#10;                      ">
          <font>
             <Font size="13.0" />
          </font>
       </TextArea>
-      <FontAwesomeIconView fill="#0000008d" glyphName="SEARCH" layoutX="281.0" layoutY="44.0" opacity="0.72" text="" />
-      <Button fx:id="assister1" layoutX="806.0" layoutY="732.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #E65F3A; -fx-background-radius: 10;" text="Assister" />
-      <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="955.0" layoutY="56.0" size="20" />
+      <Button fx:id="assister1" layoutX="806.0" layoutY="709.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #E65F3A; -fx-background-radius: 10;" text="Assister">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
       <ImageView fx:id="image1" fitHeight="234.0" fitWidth="238.0" layoutX="-65.0" layoutY="-67.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image fx:id="image1" url="@../../../images/logo2-01.png" />
          </image>
       </ImageView>
-
+      <FontAwesomeIconView glyphName="CALENDAR" layoutX="208.0" layoutY="123.0" size="16" />
+      <FontAwesomeIconView glyphName="MAP_MARKER" layoutX="211.0" layoutY="140.0" size="16" />
+      
       
    </children>
 </Pane>

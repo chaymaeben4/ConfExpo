@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="1100.0" stylesheets="style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.HelloController">
+    <children>
+        <TextArea fx:id="text0" editable="false" layoutX="299.0" layoutY="149.0" prefHeight="349.0" prefWidth="706.0" text="Conférence Internationale sur l'Innovation Technologique &#10;Date : 15-17 Novembre 2023&#10;Lieu : Centre de Conférences Marrakech&#10;Thème : &quot;Repenser l'Avenir de la Technologie&quot;&#10;                 Sessions Programmées :&#10;                      1-&quot;Intelligence Artificielle et Transformation Digitale&quot;&#10;                             Horaire : 9h00 - 10h30&#10;                             Animateur : Dr. Amina Benali, Expert en IA&#10;                      2-&quot;Nouvelles Frontières de la Cybersécurité&quot;&#10;                             Horaire : 11h00 - 12h30&#10;                             Animateur : Prof. Malik El Amrani, Spécialiste en Cybersecurity&#10;                      3-&quot;Blockchain et Innovation Financière&quot;&#10;                             Horaire : 14h00 - 15h30&#10;                             Animateur : Dr. Samir Chaoui, Expert en Blockchain&#10;                      4-&quot;Développement Durable et Technologie Verte&quot;&#10;                             Horaire : 16h00 - 17h30&#10;                             Animateur : Dr. Fatima Zohra,Environnementaliste">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </TextArea>
+        <TextField fx:id="search" layoutX="364.0" layoutY="24.0" prefHeight="26.0" prefWidth="580.0" promptText="Rechercher..." />
+        <Button fx:id="assister" layoutX="868.0" layoutY="435.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #E65F3A; -fx-background-radius: 10;" text="Editer ">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font></Button>
+        <ImageView fx:id="image2" fitHeight="234.0" fitWidth="238.0" layoutX="935.0" layoutY="-59.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image fx:id="image3" url="@../../../images/logo2-01.png" />
+            </image>
+        </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="797.0" layoutX="-2.0" layoutY="-4.0" stroke="TRANSPARENT" strokeType="INSIDE" width="227.0">
+         <fill>
+             <LinearGradient fx:id="myGradient" endX="1.0" endY="0.6628787955551436">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.09239766001701355" green="0.20037037134170532" blue="0.31578946113586426" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.17150098085403442" green="0.3646978437900543" blue="0.557894766330719" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.1318977119784656">
+                     <color>
+                        <Color red="0.21176470816135406" green="0.3803921639919281" blue="0.5607843399047852" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.35288710895184294">
+                     <color>
+                        <Color red="0.392358660697937" green="0.5486835837364197" blue="0.7157894968986511" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6380133276433706">
+                     <color>
+                        <Color red="0.4421052634716034" green="0.5052631497383118" blue="0.5684210658073425" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7855431178807076">
+                     <color>
+                        <Color red="0.6631578803062439" green="0.46666666865348816" blue="0.4273684322834015" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8881462758099987">
+                     <color>
+                        <Color red="0.800000011920929" green="0.4757530987262726" blue="0.40296295285224915" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9894737005233765" green="0.45589083433151245" blue="0.32249513268470764" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="170.0" fitWidth="220.0" layoutX="24.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="35.0" layoutY="241.0" text="Nom_Organisateur">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="WHITE" glyphName="CHEVRON_RIGHT" layoutX="936.0" layoutY="460.0" />
+      <Button fx:id="assister1" layoutX="31.0" layoutY="680.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="156.0" style="-fx-background-color: #36618F; -fx-background-radius: 10;" text="Deconnecter">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="300.0" layoutY="547.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="703.0" style="-fx-background-color: #36618F;" text="Ajouter Conférence" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <FontAwesomeIconView fill="WHITE" glyphName="PLUS_CIRCLE" layoutX="523.0" layoutY="589.0" size="30" />
+
+
+    </children>
+</Pane>
