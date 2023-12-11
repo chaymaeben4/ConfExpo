@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.design.HelloController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <ImageView fx:id="logo" fitHeight="238.0" fitWidth="238.0" layoutX="935.0" layoutY="-59.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image fx:id="image5" url="@../../../images/logo2-01.png" />
+            </image>
+        </ImageView>
+        <TableView layoutX="287.0" layoutY="161.0" prefHeight="434.0" prefWidth="666.0" style="-fx-border-color: #36618F; -fx-background-color: transparent; -fx-border-radius: 10 10 0 0;">
+            <columns>
+                <TableColumn prefWidth="194.13330078125" style="-fx-border-color: #36618F; -fx-pref-height: 60px; -fx-background-radius: 10 0 0 0; -fx-border-radius: 10 0 0 0; -fx-text-color: #E65F3A;" text="Theme de la session" />
+                <TableColumn minWidth="0.0" prefWidth="132.80001831054688" style="-fx-border-color: #36618F;" text="Date" />
+                <TableColumn prefWidth="137.60003662109375" style="-fx-border-color: #36618F;" text="Heure" />
+                <TableColumn minWidth="0.0" prefWidth="177.5999755859375" style="-fx-background-radius: 0 10 0 0; -fx-border-color: #36618F; -fx-border-radius: 0 10 0 0;" text="Lieu" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="797.0" layoutX="-2.0" layoutY="-2.0" stroke="TRANSPARENT" strokeType="INSIDE" width="227.0">
+            <fill>
+                <LinearGradient fx:id="myGradient" endX="1.0" endY="0.6628787955551436">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.09239766001701355" green="0.20037037134170532" blue="0.31578946113586426" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                            <color>
+                                <Color red="0.17150098085403442" green="0.3646978437900543" blue="0.557894766330719" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.1318977119784656">
+                            <color>
+                                <Color red="0.21176470816135406" green="0.3803921639919281" blue="0.5607843399047852" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.35288710895184294">
+                            <color>
+                                <Color red="0.392358660697937" green="0.5486835837364197" blue="0.7157894968986511" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.6380133276433706">
+                            <color>
+                                <Color red="0.4421052634716034" green="0.5052631497383118" blue="0.5684210658073425" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.7855431178807076">
+                            <color>
+                                <Color red="0.6631578803062439" green="0.46666666865348816" blue="0.4273684322834015" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.8881462758099987">
+                            <color>
+                                <Color red="0.800000011920929" green="0.4757530987262726" blue="0.40296295285224915" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.9894737005233765" green="0.45589083433151245" blue="0.32249513268470764" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+        <ImageView fitHeight="170.0" fitWidth="220.0" layoutX="24.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/3.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="35.0" layoutY="243.0" text="Nom_Organisateur">
+            <font>
+                <Font name="Arial" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="assister1" layoutX="31.0" layoutY="682.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="156.0" style="-fx-background-color: #36618F; -fx-background-radius: 10;" text="Deconnecter">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+    </children>
+
+</AnchorPane>

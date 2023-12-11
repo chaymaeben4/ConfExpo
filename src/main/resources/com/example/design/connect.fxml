@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.design.HelloController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="700.0" layoutX="720.0" layoutY="-100.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/shape.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="cercles" fitHeight="550.0" fitWidth="550.0" layoutX="-162.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/cercles.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="Usernamefield" layoutX="392.0" layoutY="296.0" prefHeight="60.0" prefWidth="280.0" promptText="Nom d'utilisateur" style="-fx-background-color: #D9D9D9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: #E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="PasswordField" layoutX="392.0" layoutY="402.0" prefHeight="60.0" prefWidth="280.0" promptText="Mot de passe" style="-fx-background-color: #D9D9D9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: #E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </PasswordField>
+
+        <Button fx:id="SeConnecter" layoutX="392.0" layoutY="509.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="280.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-radius: 8; -fx-border-color: #E65F3A; -fx-border-width: 0 0 2 0;" text="Se Connecter" textFill="#36618f">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <ImageView fx:id="logo" fitHeight="238.0" fitWidth="238.0" layoutX="413.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/logo2-01.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

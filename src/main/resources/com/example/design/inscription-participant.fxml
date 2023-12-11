@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.example.design.HelloController">
+    <center>
+        <AnchorPane prefHeight="792.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="238.0" fitWidth="238.0" layoutX="580.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/logo2-01.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="560.0" layoutY="414.0" prefHeight="26.0" prefWidth="84.0" style="-fx-font-weight: bold; -fx-font-family: Arial;" text="Nom" textFill="#36618e">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField layoutX="560.0" layoutY="439.0" prefHeight="60.0" prefWidth="280.0" promptText="Votre Nom" style="-fx-background-color: #d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-width: 0 0 2 0; -fx-border-radius: 8; -fx-border-color: #E65F3A;" />
+                <Label layoutX="560.0" layoutY="508.0" prefHeight="26.0" prefWidth="87.0" style="-fx-font-weight: bold; -fx-font-family: Arial;" text="Prenom" textFill="#36618e">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField layoutX="560.0" layoutY="538.0" prefHeight="60.0" prefWidth="280.0" promptText="Votre prenom" style="-fx-background-color: #d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: #E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8; -fx-border-color: #E65F3A;" />
+                <Label layoutX="560.0" layoutY="605.0" prefHeight="26.0" prefWidth="83.0" style="-fx-font-weight: BOLD; -fx-font-family: Arial;" text="Email" textFill="#36618e">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField layoutX="560.0" layoutY="635.0" prefHeight="60.0" prefWidth="280.0" promptText="Votre Email" style="-fx-background-color: #d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: #E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8; -fx-border-color: #E65F3A;" />
+                <PasswordField layoutX="560.0" layoutY="730.0" prefHeight="60.0" prefWidth="280.0" promptText="Mot de Passe" style="-fx-background-color: #d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: #E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8; -fx-border-color: #E65F3A;" />
+                <Label layoutX="560.0" layoutY="701.0" prefHeight="26.0" prefWidth="156.0" style="-fx-font-weight:BOLD; -fx-font-family: Arial;" text="mot de passe" textFill="#36618e">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button layoutX="559.0" layoutY="815.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="280.0" style="-fx-background-color: #36618e; -fx-font-weight: BOLD; -fx-font-family: Arial;" text="S'inscrire" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <ImageView fitHeight="437.0" fitWidth="391.0" layoutX="22.0" layoutY="792.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/cercles.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="461.0" fitWidth="476.0" layoutX="929.0" layoutY="160.0">
+                    <image>
+                        <Image url="@../../../images/shape.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
