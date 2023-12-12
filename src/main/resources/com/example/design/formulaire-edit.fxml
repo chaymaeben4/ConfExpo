@@ -11,10 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.design.HelloController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="792.0" prefWidth="1047.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.HelloController">
 
     <children>
         <ImageView fitHeight="600.0" fitWidth="600.0" layoutX="-250.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
