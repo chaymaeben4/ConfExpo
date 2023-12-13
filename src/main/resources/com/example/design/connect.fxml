@@ -52,7 +52,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Hyperlink layoutX="591.0" layoutY="599.0"  text="S'inscrire" textFill="#e65f3a">
+      <Hyperlink layoutX="591.0" layoutY="599.0" onAction="#Openlink" text="S'inscrire" textFill="#e65f3a">
          <font>
             <Font size="18.0" />
          </font>
