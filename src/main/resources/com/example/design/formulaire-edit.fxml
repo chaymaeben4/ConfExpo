@@ -12,7 +12,10 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+
+<AnchorPane prefHeight="792.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.HelloController">
+
+
     <children>
         <ImageView fitHeight="450.0" fitWidth="450.0" layoutX="-148.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true">
             <image>

@@ -18,7 +18,7 @@
       </ImageView>
       <Button layoutX="342.0" layoutY="241.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="380.0" style="-fx-background-color: #E65F3A; -fx-background-radius: 10;" text="Conférencier" textAlignment="CENTER" textFill="#fcfcfc">
          <font>
-            <Font name="Arial Bold" size="36.0" />
+            <Font name="Arial Bold" size="30.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -26,7 +26,7 @@
       </Button>
       <Button layoutX="344.0" layoutY="524.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="380.0" style="-fx-background-color: #36618F; -fx-background-radius: 10;" text="Participant" textAlignment="CENTER" textFill="#fcfcfc">
          <font>
-            <Font name="Arial Bold" size="36.0" />
+            <Font name="Arial Bold" size="30.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -34,7 +34,7 @@
       </Button>
       <Button layoutX="342.0" layoutY="383.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="380.0" style="-fx-background-color: #D0D0D0; -fx-background-radius: 10;" text="Organisateur" textAlignment="CENTER" textFill="#595959">
          <font>
-            <Font name="Arial Bold" size="36.0" />
+            <Font name="Arial Bold" size="30.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -51,7 +51,7 @@
             <Image url="@../../../images/shape.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="cercles" fitHeight="550.0" fitWidth="550.0" layoutX="-199.0" layoutY="578.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="cercles" fitHeight="550.0" fitWidth="550.0" layoutX="-182.0" layoutY="580.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/cercles.png" />
          </image>
