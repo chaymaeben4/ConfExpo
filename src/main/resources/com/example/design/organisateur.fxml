@@ -26,7 +26,10 @@
         <Button fx:id="assister" layoutX="944.0" layoutY="434.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="36.0" style="-fx-background-color: #36618F; -fx-background-radius: 10;">
             <font>
                 <Font name="System Bold" size="13.0" />
-            </font></Button>
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
         <ImageView fx:id="image2" fitHeight="234.0" fitWidth="238.0" layoutX="935.0" layoutY="-59.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image fx:id="image3" url="@../../../images/logo2-01.png" />
@@ -108,6 +111,9 @@
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <FontAwesomeIconView fill="WHITE" glyphName="PENCIL" layoutX="956.0" layoutY="458.0" size="15" />
       <FontAwesomeIconView fill="WHITE" glyphName="TRASH" layoutX="911.0" layoutY="458.0" size="15" />
