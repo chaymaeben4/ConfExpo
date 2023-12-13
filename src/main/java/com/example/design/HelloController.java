@@ -1,5 +1,6 @@
 package com.example.design;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -20,6 +22,11 @@ public class HelloController {
     private TextArea text ;
     @FXML
     private TextField search;
+
+    @FXML
+    void Openlink(ActionEvent event){
+        System.out.println("clicked");
+    }
 
 
     @FXML
