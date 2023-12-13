@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
@@ -10,8 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.HelloController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="450.0" fitWidth="450.0" layoutX="-148.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -20,53 +20,43 @@
       </ImageView>
       <Label layoutX="67.0" layoutY="78.0" text="Theme" textFill="#36618f">
          <font>
-            <Font name="Arial Bold" size="22.0" />
+            <Font name="Arial Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="823.0" layoutY="77.0" text="Lieu" textFill="#36618f">
+      <Label layoutX="598.0" layoutY="76.0" text="Lieu" textFill="#36618f">
          <font>
-            <Font name="Arial Bold" size="22.0" />
+            <Font name="Arial Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="444.0" layoutY="78.0" text="Date :" textFill="#36618f">
+      <Label layoutX="331.0" layoutY="76.0" text="Date :" textFill="#36618f">
          <font>
-            <Font name="Arial Bold" size="22.0" />
+            <Font name="Arial Bold" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="60.0" layoutY="115.0" prefHeight="50.0" prefWidth="247.0" promptText="theme" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+      <TextField layoutX="60.0" layoutY="115.0" prefHeight="50.0" prefWidth="220.0" promptText="theme" style="-fx-background-color: #d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
          <font>
-            <Font name="Arial Black" size="13.0" />
+            <Font size="13.0" />
          </font>
       </TextField>
-      <TextField layoutX="810.0" layoutY="235.0" prefHeight="50.0" prefWidth="247.0" promptText="Conferencier" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+      <Label layoutX="857.0" layoutY="198.0" text="Conférencier" textFill="#36618f">
          <font>
-            <Font name="Arial Black" size="12.0" />
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="857.0" layoutY="235.0" prefHeight="50.0" prefWidth="220.0" promptText="Conferencier" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+         <font>
+            <Font size="13.0" />
          </font>
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor>
       </TextField>
-      <TextField layoutX="810.0" layoutY="355.0" prefHeight="50.0" prefWidth="247.0" promptText="Conferencier" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+      <TextField layoutX="598.0" layoutY="114.0" prefHeight="50.0" prefWidth="480.0" promptText="Lieu" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
          <font>
-            <Font name="Arial" size="13.0" />
+            <Font size="13.0" />
          </font>
       </TextField>
-      <TextField layoutX="810.0" layoutY="475.0" prefHeight="50.0" prefWidth="247.0" promptText="Conferencier" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
-         <font>
-            <Font name="Arial Black" size="13.0" />
-         </font>
-      </TextField>
-      <TextField layoutX="810.0" layoutY="595.0" prefHeight="50.0" prefWidth="247.0" promptText="Conferencier" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
-         <font>
-            <Font name="Arial Black" size="13.0" />
-         </font>
-      </TextField>
-      <TextField layoutX="810.0" layoutY="115.0" prefHeight="50.0" prefWidth="247.0" promptText="Lieu" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
-         <font>
-            <Font name="Arial Black" size="12.0" />
-         </font>
-      </TextField>
-      <Button layoutX="810.0" layoutY="670.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="247.0" style="-fx-background-color: #36618F; -fx-background-radius: 8;" text="Ajouter" textFill="WHITE">
+      <Button layoutX="857.0" layoutY="670.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="220.0" style="-fx-background-color: #36618F; -fx-background-radius: 8;" text=" Ajouter        " textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="19.0" />
          </font>
@@ -74,92 +64,150 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <DatePicker fx:id="date" layoutX="437.0" layoutY="115.0" prefHeight="50.0" prefWidth="247.0" promptText="Date de Conference" style="-fx-background-color: d0d0d0; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+      <DatePicker fx:id="date" layoutX="331.0" layoutY="115.0" prefHeight="50.0" prefWidth="220.0" promptText="Date de Conference" style="-fx-background-color: D9D9D9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </DatePicker>
-      <TextField layoutX="437.0" layoutY="235.0" prefHeight="50.0" prefWidth="247.0" promptText="sous theme" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+      <TextField layoutX="331.0" layoutY="235.0" prefHeight="50.0" prefWidth="220.0" promptText="Sous-theme" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
          <font>
-            <Font name="Arial Black" size="13.0" />
+            <Font size="13.0" />
          </font>
       </TextField>
-      <TextField layoutX="437.0" layoutY="355.0" prefHeight="50.0" prefWidth="247.0" promptText="sous theme" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+      <TextField layoutX="331.0" layoutY="355.0" prefHeight="50.0" prefWidth="220.0" promptText="sous theme" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
          <font>
-            <Font name="Arial Black" size="13.0" />
+            <Font size="13.0" />
          </font>
       </TextField>
-      <TextField layoutX="437.0" layoutY="475.0" prefHeight="50.0" prefWidth="247.0" promptText="sous theme" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+      <TextField layoutX="331.0" layoutY="475.0" prefHeight="50.0" prefWidth="220.0" promptText="sous theme" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
          <font>
-            <Font name="Arial Black" size="13.0" />
+            <Font size="13.0" />
          </font>
       </TextField>
-      <TextField layoutX="437.0" layoutY="595.0" prefHeight="50.0" prefWidth="247.0" promptText="sous theme" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+      <TextField layoutX="331.0" layoutY="595.0" prefHeight="50.0" prefWidth="220.0" promptText="sous theme" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
          <font>
-            <Font name="Arial Black" size="13.0" />
+            <Font size="13.0" />
          </font>
       </TextField>
-      <Label layoutX="446.0" layoutY="198.0" text="Sous-theme " textFill="#36618f">
+      <Label layoutX="331.0" layoutY="198.0" text="Sous-theme " textFill="#36618f">
          <font>
-            <Font name="Arial Bold" size="22.0" />
+            <Font name="Arial Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="821.0" layoutY="318.0" text="Conférencier" textFill="#36618f">
+      <Label layoutX="331.0" layoutY="558.0" text="Sous-theme " textFill="#36618f">
          <font>
-            <Font name="Arial Bold" size="22.0" />
+            <Font name="Arial Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="821.0" layoutY="198.0" text="Conférencier" textFill="#36618f">
+      <Label layoutX="331.0" layoutY="438.0" text="Sous-theme " textFill="#36618f">
          <font>
-            <Font name="Arial Bold" size="22.0" />
+            <Font name="Arial Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="821.0" layoutY="438.0" text="Conférencier" textFill="#36618f">
+      <Label layoutX="331.0" layoutY="318.0" text="Sous-theme " textFill="#36618f">
          <font>
-            <Font name="Arial Bold" size="22.0" />
+            <Font name="Arial Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="821.0" layoutY="558.0" text="Conférencier" textFill="#36618f">
+      <Label alignment="CENTER" layoutX="60.0" layoutY="235.0" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: d9d9d9; -fx-border-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8; -fx-background-radius: 8;" text="Session 1" textFill="#36618f">
          <font>
-            <Font name="Arial Bold" size="22.0" />
+            <Font name="Arial Bold" size="21.0" />
          </font>
       </Label>
-      <Label layoutX="445.0" layoutY="558.0" text="Sous-theme " textFill="#36618f">
+      <FontAwesomeIconView fill="WHITE" glyphName="PLUS_CIRCLE" layoutX="1008.0" layoutY="705.0" size="30" />
+      <Label alignment="CENTER" layoutX="60.0" layoutY="355.0" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: d9d9d9; -fx-border-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8; -fx-background-radius: 8;" text="Session 2" textFill="#36618f">
          <font>
-            <Font name="Arial Bold" size="22.0" />
+            <Font name="Arial Bold" size="21.0" />
          </font>
       </Label>
-      <Label layoutX="446.0" layoutY="438.0" text="Sous-theme " textFill="#36618f">
+      <Label alignment="CENTER" layoutX="60.0" layoutY="595.0" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: d9d9d9; -fx-border-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8; -fx-background-radius: 8;" text="Session 1" textFill="#36618f">
          <font>
-            <Font name="Arial Bold" size="22.0" />
+            <Font name="Arial Bold" size="21.0" />
          </font>
       </Label>
-      <Label layoutX="446.0" layoutY="318.0" text="Sous-theme " textFill="#36618f">
+      <Label alignment="CENTER" layoutX="60.0" layoutY="475.0" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: d9d9d9; -fx-border-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8; -fx-background-radius: 8;" text="Session 3" textFill="#36618f">
          <font>
-            <Font name="Arial Bold" size="22.0" />
+            <Font name="Arial Bold" size="21.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="60.0" layoutY="235.0" prefHeight="50.0" prefWidth="247.0" style="-fx-background-color: d9d9d9; -fx-border-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;" text="Session 1" textFill="#36618f">
+      <Label layoutX="598.0" layoutY="198.0" text="Salle" textFill="#36618f">
          <font>
-            <Font name="Arial Bold" size="23.0" />
+            <Font name="Arial Bold" size="18.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="60.0" layoutY="475.0" prefHeight="50.0" prefWidth="247.0" style="-fx-background-color: d9d9d9; -fx-border-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;" text="Session 3" textFill="#36618f">
+      <TextField layoutX="598.0" layoutY="235.0" prefHeight="50.0" prefWidth="220.0" promptText="Salle" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
          <font>
-            <Font name="Arial Bold" size="23.0" />
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="598.0" layoutY="317.0" text="Salle" textFill="#36618f">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="60.0" layoutY="355.0" prefHeight="50.0" prefWidth="247.0" style="-fx-background-color: d9d9d9; -fx-border-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;" text="Session 2" textFill="#36618f">
+      <TextField layoutX="598.0" layoutY="355.0" prefHeight="50.0" prefWidth="220.0" promptText="Salle" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
          <font>
-            <Font name="Arial Bold" size="23.0" />
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="598.0" layoutY="438.0" text="Salle" textFill="#36618f">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="60.0" layoutY="595.0" prefHeight="50.0" prefWidth="247.0" style="-fx-background-color: d9d9d9; -fx-border-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;" text="Session 4" textFill="#36618f">
+      <TextField layoutX="598.0" layoutY="475.0" prefHeight="50.0" prefWidth="220.0" promptText="Salle" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
          <font>
-            <Font name="Arial Bold" size="23.0" />
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="598.0" layoutY="558.0" text="Salle" textFill="#36618f">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
          </font>
       </Label>
-
-      <FontAwesomeIconView fill="WHITE" glyphName="PLUS_CIRCLE" layoutX="992.0" layoutY="707.0" size="30" />
+      <TextField layoutX="598.0" layoutY="595.0" prefHeight="50.0" prefWidth="220.0" promptText="Salle" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="857.0" layoutY="317.0" text="Conférencier" textFill="#36618f">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField editable="false" layoutX="857.0" layoutY="355.0" prefHeight="50.0" prefWidth="220.0" promptText="Conferencier" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="857.0" layoutY="438.0" text="Conférencier" textFill="#36618f">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="857.0" layoutY="475.0" prefHeight="50.0" prefWidth="220.0" promptText="Conferencier" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="857.0" layoutY="558.0" text="Conférencier" textFill="#36618f">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="857.0" layoutY="595.0" prefHeight="50.0" prefWidth="220.0" promptText="Conferencier" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
    </children>
 </Pane>

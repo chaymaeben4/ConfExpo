@@ -2,18 +2,16 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.design.HelloController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="792.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.HelloController">
     <children>
         <ImageView fitHeight="600.0" fitWidth="700.0" layoutX="720.0" layoutY="-100.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -49,5 +47,15 @@
                 <Image url="@../../../images/logo2-01.png" />
             </image>
         </ImageView>
+      <Label layoutX="396.0" layoutY="604.0" prefHeight="27.0" prefWidth="202.0" text="Si vous n’êtes pas inscrit" textFill="#36618f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="591.0" layoutY="599.0" onAction="#Openlink" text="S'inscrire" textFill="#e65f3a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
     </children>
 </AnchorPane>
