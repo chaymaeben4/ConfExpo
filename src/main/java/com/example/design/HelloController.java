@@ -1,11 +1,8 @@
 package com.example.design;
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.image.Image;
-import javafx.stage.Stage;
+
+
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -28,6 +25,7 @@ public class HelloController {
     private TextArea text;
     @FXML
     private TextField search;
+
 
     @FXML
     private void handleConnectButton(ActionEvent event) {
