@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
@@ -10,8 +11,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.HelloController">
 
    <children>
@@ -116,7 +115,6 @@
             <Font name="Arial Bold" size="21.0" />
          </font>
       </Label>
-      <FontAwesomeIconView fill="WHITE" glyphName="PLUS_CIRCLE" layoutX="1008.0" layoutY="705.0" size="30" />
       <Label alignment="CENTER" layoutX="60.0" layoutY="355.0" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: d9d9d9; -fx-border-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8; -fx-background-radius: 8;" text="Session 2" textFill="#36618f">
          <font>
             <Font name="Arial Bold" size="21.0" />
@@ -206,6 +204,14 @@
 
 
       <FontAwesomeIconView fill="WHITE" glyphName="PLUS_CIRCLE" layoutX="992.0" layoutY="707.0" size="30" />
+      <TextField layoutX="857.0" layoutY="594.0" prefHeight="50.0" prefWidth="220.0" promptText="Conferencier" style="-fx-background-color: d9d9d9; -fx-background-radius: 8; -fx-border-style: solid; -fx-border-color: E65F3A; -fx-border-width: 0 0 2 0; -fx-border-radius: 8;">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
 
    </children>
 </Pane>

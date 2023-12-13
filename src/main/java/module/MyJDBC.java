@@ -5,7 +5,7 @@ public class MyJDBC {
     private Connection connection;
     public MyJDBC(){
         try {
-            connection= DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/confexpo","root","87467942");
+            connection= DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/confexpo","root","Chben97531@@");
         }
         catch (SQLException e){
             e.printStackTrace();
