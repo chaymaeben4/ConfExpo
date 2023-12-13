@@ -1,6 +1,8 @@
 package com.example.design;
 
+
 import javafx.event.ActionEvent;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,29 +21,36 @@ public class HelloController {
     @FXML
     private Button connect;
     private Button Assister;
-    private TextArea text ;
+    @FXML
+    private TextArea text;
     @FXML
     private TextField search;
 
-    @FXML
-    void Openlink(ActionEvent event){
-        System.out.println("clicked");
-    }
-
 
     @FXML
-    private void ChangerDePage() throws IOException {
+    private void handleConnectButton(ActionEvent event) {
+        connect.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                try {
+                    // Load the FXML file for the "Connect" page
+                    FXMLLoader fxmlLoader = new FXMLLoader(Page1.class.getResource("choix.fxml"));
+                    Scene scene = new Scene(fxmlLoader.load(), 1100, 792);
+                    scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
+                    Image img =new Image("C:\\Users\\hp\\Desktop\\my studies\\GI2\\S1\\POO Java\\project\\design\\src\\main\\resources\\images\\logo2.png");
+                    Stage stage= new Stage();
+                    Stage currentPage=(Stage) connect.getScene().getWindow();
+                    stage.getIcons().add(img);
+                    stage.setTitle("Page d'Acceuil");
+                    stage.setScene(scene);
+                    stage.show();
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("connect.fxml"));
-        Parent page2 = loader.load();
-
-        // Créer une nouvelle scène
-        Scene scene2 = new Scene(connect);
-
-        // Obtenir la scène actuelle à partir du bouton
-        Stage stage = (Stage) connect.getScene().getWindow();
-
-        // Remplacer la scène actuelle par la nouvelle scène
-        stage.setScene(scene2);
+                    // Close the current stage
+                    currentPage.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 }
