@@ -54,3 +54,30 @@
 .text-field{
     -fx-font-family: Arial;
 }
+#tableConferencier{
+    /*-fx-border-color: #36618F;*/
+    /*-fx-border-radius: 10px;*/
+}
+#theme_session,#heure_session{
+
+}
+#date_session,#lieu_session{
+
+}
+.table-cell {
+    -fx-alignment: CENTER;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+
+}
+.table-view .column-header {
+    -fx-background-color: #fff4;
+    -fx-justify-content: space-between;
+    -fx-align-items: center;
+}
+.table-view .column-header#theme_session{
+    -fx-border-radius: 10 0 0 0;
+}
+.table-view .column-header#lieu_session{
+    -fx-border-radius: 0 10 0 0;
+}

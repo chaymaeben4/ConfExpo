@@ -10,4 +10,5 @@ module com.example.design {
     exports com.example.design;
     exports module;
     opens module to javafx.fxml;
+    opens Classes;
 }
