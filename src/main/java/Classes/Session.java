@@ -1,21 +1,22 @@
 package Classes;
 
+import java.sql.Time;
 import java.util.Date;
+import java.util.Timer;
 
 public class Session {
     private int Id_Session;
     private String sous_theme;
     private Date date_Session;
-    private String heure_Session;
+    private Time heure_Session;
     private String lieu_Session;
-    private Conferencier conferencier;
-    public Session(int id_Session, String sous_theme, Date date_Session, String heure_Session, String lieu_Session, Conferencier conferencier) {
+    public Session(int id_Session, String sous_theme, Date date_Session, Time heure_Session, String lieu_Session) {
         this.Id_Session = id_Session;
         this.sous_theme = sous_theme;
         this.date_Session = date_Session;
         this.heure_Session = heure_Session;
         this.lieu_Session = lieu_Session;
-        this.conferencier = conferencier;
+
     }
 
     // Getter pour Id_Session
@@ -49,12 +50,12 @@ public class Session {
     }
 
     // Getter pour heure_Session
-    public String getHeure_Session() {
+    public Time getHeure_Session() {
         return heure_Session;
     }
 
     // Setter pour heure_Session
-    public void setHeure_Session(String heure_Session) {
+    public void setHeure_Session(Time heure_Session) {
         this.heure_Session = heure_Session;
     }
 
@@ -69,13 +70,6 @@ public class Session {
     }
 
     // Getter pour conferencier
-    public Conferencier getConferencier() {
-        return conferencier;
-    }
 
-    // Setter pour conferencier
-    public void setConferencier(Conferencier conferencier) {
-        this.conferencier = conferencier;
-    }
 
 }

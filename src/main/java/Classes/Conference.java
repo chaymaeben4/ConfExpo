@@ -5,7 +5,7 @@ public class Conference {
     private int Id_Conference;
     private String theme;
     private Date date;
-    private String Lieu;
+    private String lieu;
     private Session session1;
     private Session session2;
     private Session session3;
@@ -14,7 +14,7 @@ public class Conference {
         this.Id_Conference = id_Conference;
         this.theme = theme;
         this.date = date;
-        this.Lieu = lieu;
+        this.lieu = lieu;
         this.session1 = session1;
         this.session2 = session2;
         this.session3 = session3;
@@ -35,7 +35,7 @@ public class Conference {
     }
 
     public String getLieu() {
-        return Lieu;
+        return lieu;
     }
 
     public Session getSession1() {
@@ -59,7 +59,7 @@ public class Conference {
     }
 
     public void setLieu(String lieu) {
-        Lieu = lieu;
+        lieu = lieu;
     }
 
     public void setTheme(String theme) {

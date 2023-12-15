@@ -1,17 +1,25 @@
 package Classes;
 
+import java.util.ArrayList;
+
 public class Conferencier {
     private int Id_Conferencier;
     private String nom;
     private String prenom;
     private String nom_utilisateur;
     private String mot_de_passe;
+    private ArrayList<Session> sessions;
     public Conferencier(int id_Conferencier, String nom, String prenom, String nom_utilisateur, String mot_de_passe) {
         this.Id_Conferencier = id_Conferencier;
         this.nom = nom;
         this.prenom = prenom;
         this.nom_utilisateur = nom_utilisateur;
         this.mot_de_passe = mot_de_passe;
+        sessions=new ArrayList<>();
+    }
+    public void addSession(Session session){
+        this.sessions.add(session);
+
     }
     // Getter pour Id_Conferencier
     public int getId_Conferencier() {
@@ -61,6 +69,9 @@ public class Conferencier {
     // Setter pour mot_de_passe
     public void setMot_de_passe(String mot_de_passe) {
         this.mot_de_passe = mot_de_passe;
+    }
+    public ArrayList<Session> getSessions(){
+        return sessions;
     }
 
 }
