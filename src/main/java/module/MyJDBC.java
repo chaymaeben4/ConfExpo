@@ -43,11 +43,8 @@ public class MyJDBC {
                 }
                 return conferencier;
             }
-
-
         }catch(SQLException e){
             e.printStackTrace();
-
         }
         return null;
 
