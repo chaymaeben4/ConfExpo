@@ -13,19 +13,19 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.TableViewController">
+<AnchorPane prefHeight="400.0" prefWidth="800.0" stylesheets="style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.TableViewController">
     <children>
         <ImageView fx:id="logo" fitHeight="238.0" fitWidth="400.0" layoutX="935.0" layoutY="-59.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image fx:id="image5" url="@../../../images/logo2-01.png" />
             </image>
         </ImageView>
-        <TableView fx:id="tableConferencier" layoutX="330.0" layoutY="165.0" prefHeight="438.0" prefWidth="639.0" style="-fx-background-color: transparent; -fx-border-radius: 10 10 0 0;">
+        <TableView fx:id="tableConferencier" layoutX="270.0" layoutY="160.0" prefHeight="438.0" prefWidth="805.0" style="-fx-background-color: transparent; -fx-border-radius: 10 10 0 0;">
             <columns>
-                <TableColumn fx:id="theme_session" prefWidth="194.13330078125" resizable="false" style="-fx-border-color: #36618F; -fx-pref-height: 60px; -fx-background-radius: 10 0 0 0; -fx-text-color: #E65F3A;" text="Theme de la session" />
-                <TableColumn fx:id="date_session" prefWidth="122.39999389648438" style="-fx-border-color: #36618F;" text="Date" />
-                <TableColumn fx:id="heure_session" prefWidth="163.199951171875" style="-fx-border-color: #36618F;" text="Heure" />
-            <TableColumn fx:id="lieu_session" prefWidth="173.5999755859375" style="-fx-border-color: #36618F;" text="Lieu" />
+                <TableColumn fx:id="theme_session" prefWidth="200" resizable="false" style="-fx-border-color: #36618F; -fx-pref-height: 60px; -fx-background-radius: 10 0 0 0; -fx-text-color: #E65F3A;" text="Theme de la session" />
+                <TableColumn fx:id="date_session" prefWidth="200" style="-fx-border-color: #36618F;" text="Date" />
+                <TableColumn fx:id="heure_session" prefWidth="200" style="-fx-border-color: #36618F;" text="Heure" />
+            <TableColumn fx:id="lieu_session" prefWidth="200" style="-fx-border-color: #36618F;" text="Lieu" />
             </columns>
             <columnResizePolicy>
                 <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -84,7 +84,7 @@
                 <Image url="@../../../images/3.png" />
             </image>
         </ImageView>
-        <Label layoutX="35.0" layoutY="243.0" text="Nom_Organisateur">
+        <Label fx:id="Nom_Organisateur" layoutX="60.0" layoutY="245.0" prefHeight="22.0" prefWidth="98.0" text="Nom_Organi">
             <font>
                 <Font name="Arial" size="18.0" />
             </font>

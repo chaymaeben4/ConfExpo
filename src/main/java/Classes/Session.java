@@ -10,12 +10,14 @@ public class Session {
     private Date date_Session;
     private Time heure_Session;
     private String lieu_Session;
+    private Conferencier conferencier;
     public Session(int id_Session, String sous_theme, Date date_Session, Time heure_Session, String lieu_Session) {
         this.Id_Session = id_Session;
         this.sous_theme = sous_theme;
         this.date_Session = date_Session;
         this.heure_Session = heure_Session;
         this.lieu_Session = lieu_Session;
+        this.conferencier=null;
 
     }
 

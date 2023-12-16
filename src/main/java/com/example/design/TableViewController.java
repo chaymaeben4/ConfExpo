@@ -7,6 +7,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -29,6 +30,8 @@ public class TableViewController implements Initializable {
     private TableColumn<Session, Time> heure_session;
     @FXML
     private TableColumn<Conference,String> lieu_session;
+    @FXML
+            private Label Nom_Organisateur;
     ObservableList<Session> list;
 
 
@@ -43,6 +46,7 @@ public class TableViewController implements Initializable {
         Conferencier conferencier=conn.getConferencierInformation();
         list= FXCollections.observableArrayList(conferencier.getSessions());
         tableConferencier.setItems(list);
+        Nom_Organisateur.setText(conferencier.getNom()+" "+conferencier.getPrenom());
 
     }
 }
