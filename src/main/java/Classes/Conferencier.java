@@ -17,6 +17,15 @@ public class Conferencier {
         this.mot_de_passe = mot_de_passe;
         sessions=new ArrayList<>();
     }
+    public Conferencier(String nom, String prenom, String nom_utilisateur, String mot_de_passe) {
+
+        this.nom = nom;
+        this.prenom = prenom;
+        this.nom_utilisateur = nom_utilisateur;
+        this.mot_de_passe = mot_de_passe;
+
+    }
+
     public void addSession(Session session){
         this.sessions.add(session);
 

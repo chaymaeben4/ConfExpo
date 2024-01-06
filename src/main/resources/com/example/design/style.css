@@ -1,6 +1,4 @@
 
-
-
 .anchor-pane {
     -fx-min-width: 0;
     -fx-min-height: 0;
@@ -18,6 +16,10 @@
     -fx-text-fill: white;
     -fx-font-size: 15px;
 }
+#errorLabel {
+    -fx-color: #ff0000;
+}
+
 
 
 #text,#text1,#text0 {
@@ -54,6 +56,22 @@
 .text-field{
     -fx-font-family: Arial;
 }
+#about{
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-text-fill: #D0CFD0;
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-font-size: 27.0;
+}
+#welcome, #welcome1 {
+    -fx-font-family: "Rubik Mono One";
+}
+
 #tableConferencier{
     /*-fx-border-color: #36618F;*/
     /*-fx-border-radius: 10px;*/
@@ -80,4 +98,40 @@
 }
 .table-view .column-header#lieu_session{
     -fx-border-radius: 0 10 0 0;
+}
+#tableConferencier{
+    /*-fx-border-color: #36618F;*/
+    /*-fx-border-radius: 10px;*/
+}
+#theme_session,#heure_session{
+
+}
+#date_session,#lieu_session{
+
+}
+.table-cell {
+    -fx-alignment: CENTER;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+
+}
+.table-view .column-header {
+    -fx-background-color: #fff4;
+    -fx-justify-content: space-between;
+    -fx-align-items: center;
+}
+.table-view .column-header#theme_session{
+    -fx-border-radius: 10 0 0 0;
+}
+.table-view .column-header#lieu_session{
+    -fx-border-radius: 0 10 0 0;
+}
+.custom-alert {
+    -fx-background-color: #FFCCCC; /* Couleur de fond */
+}
+
+/* Personnaliser le texte de l'Alert */
+.custom-alert .alert-content {
+    -fx-text-fill: #FF0000; /* Couleur du texte */
+    -fx-font-size: 14px; /* Taille de la police */
 }
