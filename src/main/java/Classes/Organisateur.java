@@ -13,6 +13,12 @@ public class Organisateur {
         this.nom_utilisateur = nom_utilisateur;
         this.mot_de_passe = mot_de_passe;
     }
+    public Organisateur( String nom, String prenom, String nom_utilisateur, String mot_de_passe) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.nom_utilisateur = nom_utilisateur;
+        this.mot_de_passe = mot_de_passe;
+    }
     // Getter pour Id_Organisateur
     public int getId_Organisateur() {
         return Id_Organisateur;

@@ -1,6 +1,6 @@
 package com.example.design;
 
-
+import javafx.scene.text.Font;
 import javafx.event.ActionEvent;
 
 import javafx.event.EventHandler;
@@ -18,6 +18,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+
 public class HelloController {
     @FXML
     private Button connect;
@@ -26,32 +27,50 @@ public class HelloController {
     private TextArea text;
     @FXML
     private TextField search;
+    @FXML
+    private Button s_inscrire;
+    @FXML
+    private Button commencer_btn;
+
+    @FXML
+    private void initialize() {
+        // Charger la police dans le contrôleur
+        Font.loadFont(getClass().getResourceAsStream("/path/to/RubikMonoOne-Regular.ttf"), 28.0);
+    }
+    @FXML
+    private void handle_commencer_btn(){
+        afficher_page("hello-view","page d'acceuil",commencer_btn);
+    }
+
+    @FXML
+    private void handle_choix_btn(){
+        afficher_page("choix","Votre Role",connect);
+    }
 
 
     @FXML
-    private void handleConnectButton(ActionEvent event) {
-        connect.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                try {
-                    // Load the FXML file for the "Connect" page
-                    FXMLLoader fxmlLoader = new FXMLLoader(Page1.class.getResource("choix.fxml"));
-                    Scene scene = new Scene(fxmlLoader.load(), 1100, 792);
-                    scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
-                    Image img =new Image("C:\\Users\\hp\\Desktop\\my studies\\GI2\\S1\\POO Java\\project\\design\\src\\main\\resources\\images\\logo2.png");
-                    Stage stage= new Stage();
-                    Stage currentPage=(Stage) connect.getScene().getWindow();
-                    stage.getIcons().add(img);
-                    stage.setTitle("Page d'Acceuil");
-                    stage.setScene(scene);
-                    stage.show();
+    public void afficher_page( String fichier, String title, Button btn) {
+        try {
+            // Load the FXML file for the "Connect" page
+            FXMLLoader fxmlLoader = new FXMLLoader(Page1.class.getResource(fichier+".fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 1100, 792);
+            scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
+            Image img = new Image("C:\\Users\\hp\\Desktop\\my studies\\GI2\\S1\\POO Java\\project\\design\\src\\main\\resources\\images\\logo2.png");
+            Stage stage = new Stage();
 
-                    // Close the current stage
-                    currentPage.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
+            stage.getIcons().add(img);
+            stage.setTitle(title);
+            stage.setScene(scene);
+            stage.show();
+
+            // Close the current Stage
+            Stage currentStage = (Stage) btn.getScene().getWindow();
+            currentStage.close();
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }

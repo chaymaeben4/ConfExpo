@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="792.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.HelloController">
+<AnchorPane prefHeight="792.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.InscriptionController">
     <children>
         <ImageView fitHeight="600.0" fitWidth="700.0" layoutX="720.0" layoutY="-100.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -52,7 +52,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Hyperlink layoutX="591.0" layoutY="599.0"  text="S'inscrire" textFill="#e65f3a">
+      <Hyperlink fx:id="link" layoutX="591.0" layoutY="599.0" onAction="#hundle_btn_inscrire" text="S'inscrire" textFill="#e65f3a">
          <font>
             <Font size="18.0" />
          </font>

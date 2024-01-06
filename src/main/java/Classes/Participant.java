@@ -13,6 +13,12 @@ public class Participant {
         this.nom_utilisateur = nom_utilisateur;
         this.mot_de_passe = mot_de_passe;
     }
+    public Participant( String nom, String prenom, String nom_utilisateur, String mot_de_passe) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.nom_utilisateur = nom_utilisateur;
+        this.mot_de_passe = mot_de_passe;
+    }
 
     // Getter pour Id_Participant
     public int getId_Participant() {
