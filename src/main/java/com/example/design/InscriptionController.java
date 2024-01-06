@@ -80,7 +80,7 @@ public class InscriptionController {
             }
         }
         else {
-            // Afficher un message d'erreur si l'email ne contient pas "@"
+
             showError("L'adresse e-mail semble incorrecte");
         }
     }
@@ -89,30 +89,7 @@ public class InscriptionController {
         errorLabel.setVisible(true);
     }
 
-//    private void afficher_page( String role) {
-//        try {
-//            // Load the FXML file for the "Connect" page
-//            FXMLLoader fxmlLoader = new FXMLLoader(Page1.class.getResource(role+".fxml"));
-//            Scene scene = new Scene(fxmlLoader.load(), 1100, 792);
-//            scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
-//            Image img = new Image("C:\\Users\\hp\\Desktop\\my studies\\GI2\\S1\\POO Java\\project\\design\\src\\main\\resources\\images\\logo2.png");
-//            Stage stage = new Stage();
-//
-//            stage.getIcons().add(img);
-//            stage.setTitle(role);
-//            stage.setScene(scene);
-//            stage.show();
-//
-//            // Close the current Stage
-//            Stage currentStage = (Stage) sign_up.getScene().getWindow();
-//            currentStage.close();
-//
-//
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//
-//    }
+
     @FXML
     private void hundle_btn_inscrire() {
         try {
