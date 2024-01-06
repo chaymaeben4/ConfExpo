@@ -5,6 +5,7 @@ import Classes.Conferencier;
 import Classes.Session;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -47,6 +48,10 @@ public class TableViewController implements Initializable {
         list= FXCollections.observableArrayList(conferencier.getSessions());
         tableConferencier.setItems(list);
         Nom_Organisateur.setText(conferencier.getNom()+" "+conferencier.getPrenom());
+
+    }
+    public void Deconnecter(ActionEvent e){
+
 
     }
 }
