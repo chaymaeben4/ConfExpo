@@ -25,11 +25,17 @@ public class Conferencier {
         this.mot_de_passe = mot_de_passe;
 
     }
+    public Conferencier(String nom ,String prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
 
+
+    }
     public void addSession(Session session){
         this.sessions.add(session);
 
     }
+
     // Getter pour Id_Conferencier
     public int getId_Conferencier() {
         return Id_Conferencier;

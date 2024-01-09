@@ -6,7 +6,6 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.ChoixController">
@@ -16,7 +15,7 @@
             <Image url="@../../../images/logo2-01.png" />
          </image>
       </ImageView>
-      <Button fx:id="btn_conferencier" layoutX="342.0" layoutY="241.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="380.0" style="-fx-background-color: #E65F3A; -fx-background-radius: 10;" text="Conférencier" textAlignment="CENTER" textFill="#fcfcfc" onAction="#handleConferencierButton">
+      <Button fx:id="btn_conferencier" layoutX="342.0" layoutY="241.0" mnemonicParsing="false" onAction="#handleConferencierButton" prefHeight="80.0" prefWidth="380.0" style="-fx-background-color: #E65F3A; -fx-background-radius: 10;" text="Conférencier" textAlignment="CENTER" textFill="#fcfcfc">
          <font>
             <Font name="Arial Bold" size="30.0" />
          </font>
@@ -24,7 +23,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="btn_part" layoutX="344.0" layoutY="524.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="380.0" style="-fx-background-color: #36618F; -fx-background-radius: 10;" text="Participant" textAlignment="CENTER" textFill="#fcfcfc" onAction="#handleParticipantButton">
+      <Button fx:id="btn_part" layoutX="344.0" layoutY="524.0" mnemonicParsing="false" onAction="#handleParticipantButton" prefHeight="80.0" prefWidth="380.0" style="-fx-background-color: #36618F; -fx-background-radius: 10;" text="Participant" textAlignment="CENTER" textFill="#fcfcfc">
          <font>
             <Font name="Arial Bold" size="30.0" />
          </font>
@@ -32,7 +31,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="btn_org" layoutX="342.0" layoutY="383.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="380.0" style="-fx-background-color: #D0D0D0; -fx-background-radius: 10;" text="Organisateur" textAlignment="CENTER" textFill="#595959" onAction="#handleOrganisateurButton">
+      <Button fx:id="btn_org" layoutX="342.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleOrganisateurButton" prefHeight="80.0" prefWidth="380.0" style="-fx-background-color: #D0D0D0; -fx-background-radius: 10;" text="Organisateur" textAlignment="CENTER" textFill="#595959">
          <font>
             <Font name="Arial Bold" size="30.0" />
          </font>
@@ -40,12 +39,11 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Label layoutX="429.0" layoutY="147.0" text="Vous êtes un  " textFill="#7b7b7b">
+      <Label contentDisplay="CENTER" layoutX="303.0" layoutY="152.0" text="Veuillez sélectionner votre fonction  " textFill="#36618f">
          <font>
-            <Font name="Arial" size="33.0" />
+            <Font name="Arial" size="30.0" />
          </font>
       </Label>
-      <Line endX="100.0" layoutX="527.0" layoutY="185.0" startX="-100.0" />
       <ImageView fitHeight="600.0" fitWidth="700.0" layoutX="799.0" layoutY="-104.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/shape.png" />

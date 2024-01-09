@@ -20,7 +20,7 @@
                 <Image fx:id="image5" url="@../../../images/logo2-01.png" />
             </image>
         </ImageView>
-        <TableView fx:id="tableConferencier" layoutX="270.0" layoutY="160.0" prefHeight="438.0" prefWidth="805.0" style="-fx-background-color: transparent; -fx-border-radius: 10 10 0 0;">
+        <TableView fx:id="tableConferencier" layoutX="248.0" layoutY="166.0" prefHeight="438.0" prefWidth="805.0" style="-fx-background-color: transparent; -fx-border-radius: 10 10 0 0;">
             <columns>
                 <TableColumn fx:id="theme_session" prefWidth="200" resizable="false" style="-fx-border-color: #36618F; -fx-pref-height: 60px; -fx-background-radius: 10 0 0 0; -fx-text-color: #E65F3A;" text="Theme de la session" />
                 <TableColumn fx:id="date_session" prefWidth="200" style="-fx-border-color: #36618F;" text="Date" />
@@ -84,7 +84,7 @@
                 <Image url="@../../../images/3.png" />
             </image>
         </ImageView>
-        <Label fx:id="Nom_Organisateur" layoutX="60.0" layoutY="245.0" prefHeight="22.0" prefWidth="98.0" text="Nom_Organi">
+        <Label fx:id="Nom_conferencier" layoutX="37.0" layoutY="244.0" prefHeight="22.0" prefWidth="187.0" text="Nom_Organisateur">
             <font>
                 <Font name="Arial" size="18.0" />
             </font>

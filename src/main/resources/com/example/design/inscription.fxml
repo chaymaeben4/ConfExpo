@@ -49,14 +49,6 @@
                     <Font size="14.0" />
                 </font>
                 </Label>
-                <Button fx:id="sign_up" layoutX="560.0" layoutY="820.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="280.0" style="-fx-background-color: #36618e; -fx-font-weight: BOLD; -fx-font-family: Arial;" text="S'inscrire" textFill="WHITE" onAction="#handle_sign_up">
-                    <font>
-                        <Font name="System Bold" size="18.0" />
-                    </font>
-                    <cursor>
-                        <Cursor fx:constant="HAND" />
-                    </cursor>
-                </Button>
                 <ImageView fitHeight="437.0" fitWidth="391.0" layoutX="22.0" layoutY="792.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../../images/cercles.png" />
@@ -67,6 +59,14 @@
                         <Image url="@../../../images/shape.png" />
                     </image>
                 </ImageView>
+            <Button fx:id="sign_up" layoutX="561.0" layoutY="830.0" mnemonicParsing="false" onAction="#handle_sign_up" prefHeight="60.0" prefWidth="279.0" style="-fx-background-color: #36618e;" text="S'inscrire" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
             </children>
         </AnchorPane>
     </center>

@@ -21,6 +21,11 @@ public class Conference {
         this.session4 = session4;
     }
 
+    public Conference(String theme,Date date,String lieu){
+        this.theme = theme;
+        this.date = date;
+        this.lieu = lieu;
+    }
     public int getId_Conference() {
         return Id_Conference;
     }
