@@ -5,7 +5,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -16,15 +15,12 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="792.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.HelloController">
+<AnchorPane prefHeight="792.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design.ParticipantController">
    <children>
-      <TextArea fx:id="text0" editable="false" layoutX="299.0" layoutY="72.0" prefHeight="349.0" prefWidth="706.0" text="Conférence Internationale sur l'Innovation Technologique &#10;Date : 15-17 Novembre 2023&#10;Lieu : Centre de Conférences Marrakech&#10;Thème : &quot;Repenser l'Avenir de la Technologie&quot;&#10;                 Sessions Programmées :&#10;                      1-&quot;Intelligence Artificielle et Transformation Digitale&quot;&#10;                             Horaire : 9h00 - 10h30&#10;                             Animateur : Dr. Amina Benali, Expert en IA&#10;                      2-&quot;Nouvelles Frontières de la Cybersécurité&quot;&#10;                             Horaire : 11h00 - 12h30&#10;                             Animateur : Prof. Malik El Amrani, Spécialiste en Cybersecurity&#10;                      3-&quot;Blockchain et Innovation Financière&quot;&#10;                             Horaire : 14h00 - 15h30&#10;                             Animateur : Dr. Samir Chaoui, Expert en Blockchain&#10;                      4-&quot;Développement Durable et Technologie Verte&quot;&#10;                             Horaire : 16h00 - 17h30&#10;                             Animateur : Dr. Fatima Zohra,Environnementaliste">
-         <font>
-            <Font name="Arial" size="13.0" />
-         </font>
-      </TextArea>
-      <TextField fx:id="search" layoutX="365.0" layoutY="27.0" prefHeight="26.0" prefWidth="580.0" promptText="Rechercher..." />
-      <Button fx:id="assister" layoutX="868.0" layoutY="358.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #E65F3A; -fx-background-radius: 10;" text="Editer ">
+
+      <TextField fx:id="search" layoutX="365.0" layoutY="20.0" prefHeight="26.0" prefWidth="580.0" promptText="Rechercher..." />
+      <Rectangle fx:id="rec1" arcHeight="5.0" arcWidth="5.0" fill="#E4E4E4" height="329.0" layoutX="324.0" layoutY="80.0" stroke="#00000056" width="615.0" />
+      <Button fx:id="confirmer" layoutX="780.0" layoutY="355.0" mnemonicParsing="false" onAction="#onAssisterButtonClicked" prefHeight="20.0" prefWidth="110.0" style="-fx-background-color: #E65F3A; -fx-background-radius: 10;" text="Confirmer" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
@@ -32,6 +28,8 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <FontAwesomeIconView fx:id="time1" glyphName="CALENDAR" layoutX="362.0" layoutY="115.0" size="16" />
+      <FontAwesomeIconView fx:id="loc1" glyphName="MAP_MARKER" layoutX="365.0" layoutY="131.0" size="16" text="" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="812.0" layoutX="-1.0" layoutY="-7.0" stroke="TRANSPARENT" strokeType="INSIDE" width="227.0">
          <fill>
             <LinearGradient fx:id="myGradient" endX="1.0" endY="0.6628787955551436">
@@ -85,15 +83,15 @@
             <Image url="@../../../images/3.png" />
          </image>
       </ImageView>
-      <Label layoutX="42.0" layoutY="244.0" text="Nom_Participant">
+      <Label fx:id="nom_participant" layoutX="35.0" layoutY="244.0" text="Nom_Participant">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
       </Label>
-      <FontAwesomeIconView fill="WHITE" glyphName="CHEVRON_RIGHT" layoutX="936.0" layoutY="384.0" />
-      <Button fx:id="assister1" layoutX="32.0" layoutY="683.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="156.0" style="-fx-background-color: #36618F; -fx-background-radius: 10;" text="Deconnecter">
+      <Rectangle fx:id="rec2" arcHeight="5.0" arcWidth="5.0" fill="#E4E4E4" height="329.0" layoutX="323.0" layoutY="436.0" stroke="#00000056" width="615.0" />
+      <Button fx:id="deconnecter" layoutX="32.0" layoutY="683.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="156.0" style="-fx-background-color: #36618F; -fx-background-radius: 10;" text="Deconnecter" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="15.0" />
+            <Font name="Arial Bold" size="15.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -104,12 +102,111 @@
             <Image fx:id="image3" url="@../../../images/logo2-01.png" />
          </image>
       </ImageView>
-      <TextArea fx:id="text1" editable="false" layoutX="300.0" layoutY="435.0" prefHeight="349.0" prefWidth="706.0" text="Conférence Internationale sur l'Innovation Technologique &#10;Date : 15-17 Novembre 2023&#10;Lieu : Centre de Conférences Marrakech&#10;Thème : &quot;Repenser l'Avenir de la Technologie&quot;&#10;                 Sessions Programmées :&#10;                      1-&quot;Intelligence Artificielle et Transformation Digitale&quot;&#10;                             Horaire : 9h00 - 10h30&#10;                             Animateur : Dr. Amina Benali, Expert en IA&#10;                      2-&quot;Nouvelles Frontières de la Cybersécurité&quot;&#10;                             Horaire : 11h00 - 12h30&#10;                             Animateur : Prof. Malik El Amrani, Spécialiste en Cybersecurity&#10;                      3-&quot;Blockchain et Innovation Financière&quot;&#10;                             Horaire : 14h00 - 15h30&#10;                             Animateur : Dr. Samir Chaoui, Expert en Blockchain&#10;                      4-&quot;Développement Durable et Technologie Verte&quot;&#10;                             Horaire : 16h00 - 17h30&#10;                             Animateur : Dr. Fatima Zohra,Environnementaliste">
+      <CheckBox fx:id="check11" layoutX="399.0" layoutY="187.0" mnemonicParsing="false" />
+      <CheckBox fx:id="check13" layoutX="398.0" layoutY="287.0" mnemonicParsing="false" />
+      <CheckBox fx:id="check12" layoutX="398.0" layoutY="238.0" mnemonicParsing="false" />
+      <CheckBox fx:id="check14" layoutX="398.0" layoutY="343.0" mnemonicParsing="false" />
+      <Label fx:id="dateLabel" layoutX="387.0" layoutY="101.0" text="Date : 15-17 Novembre 2023">
          <font>
-            <Font name="Arial" size="13.0" />
+            <Font name="System Bold Italic" size="12.0" />
          </font>
-      </TextArea>
-      <Button fx:id="assister2" layoutX="869.0" layoutY="721.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #E65F3A; -fx-background-radius: 10;" text="Editer " textFill="WHITE">
+      </Label>
+      <Label fx:id="locationLabel" layoutX="387.0" layoutY="117.0" text="Lieu : Centre de Conférences Marrakech">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="themeLabel" layoutX="380.0" layoutY="134.0" text="  Thème : &quot;Repenser l'Avenir de la Technologie&quot;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="sessionsLabel" layoutX="389.0" layoutY="151.0" prefHeight="17.0" prefWidth="411.0" text="Sessions Programmées :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="theme1" layoutX="440.0" layoutY="168.0" prefHeight="17.0" prefWidth="326.0" text="1-&quot;Intelligence Artificielle et Transformation Digitale&quot;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="Horaire1" layoutX="442.0" layoutY="185.0" prefHeight="17.0" prefWidth="176.0" text="Horaire : 9h00 - 10h30" />
+      <Label fx:id="Conferencier1" layoutX="438.0" layoutY="202.0" prefHeight="17.0" prefWidth="273.0" text="Animateur : Dr. Amina Benali, Expert en IA" />
+      <Label fx:id="theme2" layoutX="438.0" layoutY="219.0" prefHeight="17.0" prefWidth="250.0" text="2-&quot;Nouvelles Frontières de la Cybersécurité&quot;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="Horaire2" layoutX="439.0" layoutY="236.0" text="Horaire : 11h00 - 12h30" />
+      <Label fx:id="Conferencier2" layoutX="438.0" layoutY="253.0" prefHeight="17.0" prefWidth="400.0" text="Animateur : Prof. Malik El Amrani, Spécialiste en Cybersecurity" />
+      <Label fx:id="theme3" layoutX="438.0" layoutY="262.0" prefHeight="33.0" prefWidth="400.0" text="3-&quot;Blockchain et Innovation Financière&quot;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="Horaire3" layoutX="438.0" layoutY="279.0" prefHeight="33.0" prefWidth="400.0" text="Horaire : 14h00 - 15h30" />
+      <Label fx:id="Conferencier3" layoutX="438.0" layoutY="304.0" prefHeight="17.0" prefWidth="400.0" text="Animateur : Dr. Samir Chaoui, Expert en Blockchain" />
+      <Label fx:id="theme4" layoutX="438.0" layoutY="321.0" prefHeight="17.0" prefWidth="400.0" text="4-&quot;Développement Durable et Technologie Verte&quot;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="Horaire4" layoutX="438.0" layoutY="338.0" prefHeight="17.0" prefWidth="400.0" text="Horaire : 16h00 - 17h30" />
+      <Label fx:id="Conferencier4" layoutX="438.0" layoutY="357.0" prefHeight="17.0" prefWidth="297.0" text="Animateur : Dr. Fatima Zohra, Environnementaliste" />
+      <Label fx:id="dateLabel1" layoutX="386.0" layoutY="457.0" text="Date : 15-17 Novembre 2023">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="locationLabel1" layoutX="386.0" layoutY="473.0" text="Lieu : Centre de Conférences Marrakech">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="themeLabel1" layoutX="379.0" layoutY="490.0" text="  Thème : &quot;Repenser l'Avenir de la Technologie&quot;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="sessionsLabel1" layoutX="388.0" layoutY="507.0" prefHeight="17.0" prefWidth="411.0" text="Sessions Programmées :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="theme11" layoutX="439.0" layoutY="524.0" prefHeight="17.0" prefWidth="326.0" text="1-&quot;Intelligence Artificielle et Transformation Digitale&quot;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="Horaire11" layoutX="441.0" layoutY="541.0" prefHeight="17.0" prefWidth="176.0" text="Horaire : 9h00 - 10h30" />
+      <Label fx:id="Conferencier11" layoutX="437.0" layoutY="558.0" prefHeight="17.0" prefWidth="273.0" text="Animateur : Dr. Amina Benali, Expert en IA" />
+      <Label fx:id="theme21" layoutX="437.0" layoutY="575.0" prefHeight="17.0" prefWidth="250.0" text="2-&quot;Nouvelles Frontières de la Cybersécurité&quot;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="Horaire21" layoutX="438.0" layoutY="592.0" text="Horaire : 11h00 - 12h30" />
+      <Label fx:id="Conferencier21" layoutX="437.0" layoutY="609.0" prefHeight="17.0" prefWidth="400.0" text="Animateur : Prof. Malik El Amrani, Spécialiste en Cybersecurity" />
+      <Label fx:id="theme31" layoutX="437.0" layoutY="618.0" prefHeight="33.0" prefWidth="400.0" text="3-&quot;Blockchain et Innovation Financière&quot;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="Horaire31" layoutX="437.0" layoutY="635.0" prefHeight="33.0" prefWidth="400.0" text="Horaire : 14h00 - 15h30" />
+      <Label fx:id="Conferencier31" layoutX="437.0" layoutY="660.0" prefHeight="17.0" prefWidth="400.0" text="Animateur : Dr. Samir Chaoui, Expert en Blockchain" />
+      <Label fx:id="theme41" layoutX="437.0" layoutY="677.0" prefHeight="17.0" prefWidth="400.0" text="4-&quot;Développement Durable et Technologie Verte&quot;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="Horaire41" layoutX="437.0" layoutY="694.0" prefHeight="17.0" prefWidth="400.0" text="Horaire : 16h00 - 17h30" />
+      <Label fx:id="Conferencier41" layoutX="437.0" layoutY="713.0" prefHeight="17.0" prefWidth="297.0" text="Animateur : Dr. Fatima Zohra, Environnementaliste" />
+      <CheckBox fx:id="check21" layoutX="400.0" layoutY="540.0" mnemonicParsing="false" />
+      <CheckBox fx:id="check22" layoutX="400.0" layoutY="640.0" mnemonicParsing="false" />
+      <CheckBox fx:id="check23" layoutX="400.0" layoutY="591.0" mnemonicParsing="false" />
+      <CheckBox fx:id="check24" layoutX="400.0" layoutY="696.0" mnemonicParsing="false" />
+      <Button fx:id="confirmer1" layoutX="778.0" layoutY="717.0" mnemonicParsing="false" onAction="#onAssisterButtonClicked" prefHeight="20.0" prefWidth="110.0" style="-fx-background-color: #E65F3A; -fx-background-radius: 10;" text="Confirmer" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
@@ -117,15 +214,8 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <FontAwesomeIconView fill="WHITE" glyphName="CHEVRON_RIGHT" layoutX="936.0" layoutY="746.0" />
-      <CheckBox layoutX="362.0" layoutY="163.0" mnemonicParsing="false" />
-      <CheckBox layoutX="362.0" layoutY="264.0" mnemonicParsing="false" />
-      <CheckBox layoutX="362.0" layoutY="214.0" mnemonicParsing="false" />
-      <CheckBox layoutX="362.0" layoutY="314.0" mnemonicParsing="false" />
-      <CheckBox layoutX="362.0" layoutY="527.0" mnemonicParsing="false" />
-      <CheckBox layoutX="362.0" layoutY="628.0" mnemonicParsing="false" />
-      <CheckBox layoutX="362.0" layoutY="578.0" mnemonicParsing="false" />
-      <CheckBox layoutX="362.0" layoutY="678.0" mnemonicParsing="false" />
+      <FontAwesomeIconView fx:id="time11" glyphName="CALENDAR" layoutX="367.0" layoutY="471.0" size="16" />
+      <FontAwesomeIconView fx:id="loc11" glyphName="MAP_MARKER" layoutX="370.0" layoutY="489.0" size="16" text="" />
    </children>
    <cursor>
       <Cursor fx:constant="DEFAULT" />

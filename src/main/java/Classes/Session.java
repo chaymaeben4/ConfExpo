@@ -11,6 +11,7 @@ public class Session {
     private Time heure_Session;
     private String lieu_Session;
     private Conferencier conferencier;
+    private Salle salle;
 
     public Session(int id_Session, String sous_theme, Date date_Session, Time heure_Session, String lieu_Session) {
         this.Id_Session = id_Session;
@@ -20,6 +21,20 @@ public class Session {
         this.lieu_Session = lieu_Session;
         this.conferencier=null;
 
+    }
+    public Session(String sous_theme,Time horaire,Conferencier conferencier){
+        this.sous_theme = sous_theme;
+        this.heure_Session = horaire;
+        this.conferencier=conferencier;
+    }
+    public Session(int id_Session, String sous_theme, Date date_Session, Time heure_Session, String lieu_Session,Conferencier conferencier ) {
+        this.Id_Session = id_Session;
+        this.sous_theme = sous_theme;
+        this.date_Session = date_Session;
+        this.heure_Session = heure_Session;
+        this.lieu_Session = lieu_Session;
+        this.conferencier = conferencier;
+        this.salle = null;
     }
 
     // Getter pour Id_Session
@@ -35,6 +50,9 @@ public class Session {
     // Getter pour sous_theme
     public String getSous_theme() {
         return sous_theme;
+    }
+    public Conferencier getConferencier() {
+        return conferencier;
     }
 
     // Setter pour sous_theme

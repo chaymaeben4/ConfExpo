@@ -32,13 +32,14 @@ public class TableViewController implements Initializable {
     @FXML
     private TableColumn<Conference,String> lieu_session;
     @FXML
-            private Label Nom_Organisateur;
+    private Label Nom_conferencier;
     ObservableList<Session> list;
 
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         theme_session.setCellValueFactory(new PropertyValueFactory<Session,String>("sous_theme"));
         date_session.setCellValueFactory(new PropertyValueFactory<Session,Date>("date_Session"));
         heure_session.setCellValueFactory(new PropertyValueFactory<Session,Time>("heure_Session"));
@@ -47,7 +48,10 @@ public class TableViewController implements Initializable {
         Conferencier conferencier=conn.getConferencierInformation();
         list= FXCollections.observableArrayList(conferencier.getSessions());
         tableConferencier.setItems(list);
-        Nom_Organisateur.setText(conferencier.getNom()+" "+conferencier.getPrenom());
+        String username = ApplicationController.getInstance().getUsername();
+        String[] fullName = conn.getFullNameconf(username);
+        String nomPrenom = fullName[0] + " " + fullName[1];
+        Nom_conferencier.setText(nomPrenom);
 
     }
     public void Deconnecter(ActionEvent e){

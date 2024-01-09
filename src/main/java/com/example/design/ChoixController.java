@@ -24,21 +24,21 @@ public class ChoixController {
     public void handleConferencierButton() {
         HelloController helloController =new HelloController();
         ApplicationController.getInstance().setSelectedRole("Conferencier");
-        helloController.afficher_page("connect","Connexion", btn_conferencier);
+        helloController.afficher_page("connect","Page de Connexion", btn_conferencier);
     }
 
     @FXML
     private void handleOrganisateurButton() {
         HelloController helloController =new HelloController();
         ApplicationController.getInstance().setSelectedRole("Organisateur");
-        helloController.afficher_page("connect","Connexion", btn_org);
+        helloController.afficher_page("connect","Page de Connexion", btn_org);
     }
 
     @FXML
     private void handleParticipantButton() {
         HelloController helloController =new HelloController();
         ApplicationController.getInstance().setSelectedRole("Participant");
-        helloController.afficher_page("connect","Connecion", btn_part);
+        helloController.afficher_page("connect","Page de Connexion", btn_part);
     }
 
 

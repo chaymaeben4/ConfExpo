@@ -101,7 +101,7 @@ public class InscriptionController {
             Stage stage = new Stage();
 
             stage.getIcons().add(img);
-            stage.setTitle("Inscription");
+            stage.setTitle("Page d'inscription");
             stage.setScene(scene);
             stage.show();
 
@@ -115,4 +115,6 @@ public class InscriptionController {
         }
 
     }
+
+
 }
